@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8514A1FBCF4156DDCFB77292 /* libPods-Homework Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6875807E98C222256022F1C0 /* libPods-Homework Helper.a */; };
 		EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D37F1A86B82000768511 /* AppDelegate.swift */; };
 		EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE59D3811A86B82000768511 /* Homework_Helper.xcdatamodeld */; };
-		EE59D3851A86B82000768511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D3841A86B82000768511 /* ViewController.swift */; };
+		EE59D3851A86B82000768511 /* AssignmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D3841A86B82000768511 /* AssignmentsViewController.swift */; };
 		EE59D3881A86B82000768511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE59D3861A86B82000768511 /* Main.storyboard */; };
 		EE59D38A1A86B82000768511 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE59D3891A86B82000768511 /* Images.xcassets */; };
 		EE59D38D1A86B82000768511 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE59D38B1A86B82000768511 /* LaunchScreen.xib */; };
 		EE59D3991A86B82000768511 /* Homework_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D3981A86B82000768511 /* Homework_HelperTests.swift */; };
+		EE7EB11A1A86C4B90020A6AB /* ClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1191A86C4B90020A6AB /* ClassesViewController.swift */; };
+		EE7EB11C1A86C4CE0020A6AB /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB11B1A86C4CE0020A6AB /* GradesViewController.swift */; };
+		EE7EB11E1A86C4FE0020A6AB /* TeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB11D1A86C4FE0020A6AB /* TeachersViewController.swift */; };
+		EE7EB1201A86C5690020A6AB /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB11F1A86C5690020A6AB /* AddAssignmentViewController.swift */; };
+		EE7EB1221A86C5830020A6AB /* ViewAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1211A86C5830020A6AB /* ViewAssignmentViewController.swift */; };
+		EE7EB1251A86C5C50020A6AB /* AddClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1241A86C5C50020A6AB /* AddClassViewController.swift */; };
+		EE7EB1271A86C5EA0020A6AB /* ViewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1261A86C5EA0020A6AB /* ViewClassViewController.swift */; };
+		EE7EB12A1A86C6240020A6AB /* AddGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1291A86C6240020A6AB /* AddGradeViewController.swift */; };
+		EE7EB12C1A86C6330020A6AB /* ViewGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB12B1A86C6330020A6AB /* ViewGradeViewController.swift */; };
+		EE7EB12F1A86C65D0020A6AB /* AddTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB12E1A86C65D0020A6AB /* AddTeacherViewController.swift */; };
+		EE7EB1311A86C6710020A6AB /* ViewTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1301A86C6710020A6AB /* ViewTeacherViewController.swift */; };
+		EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1331A86CC7A0020A6AB /* Teacher.swift */; };
+		EE7EB1361A86CC7B0020A6AB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1351A86CC7A0020A6AB /* Class.swift */; };
+		EE7EB1381A86CC7B0020A6AB /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1371A86CC7B0020A6AB /* Assignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +42,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0165788B3F2EA710B4848CCF /* Pods-Homework Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.debug.xcconfig"; sourceTree = "<group>"; };
+		3EF9D5D40E6E80B035A9DDDD /* Pods-Homework Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.release.xcconfig"; sourceTree = "<group>"; };
+		6875807E98C222256022F1C0 /* libPods-Homework Helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Homework Helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59D37A1A86B82000768511 /* Homework Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59D37E1A86B82000768511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE59D37F1A86B82000768511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE59D3821A86B82000768511 /* Homework_Helper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homework_Helper.xcdatamodel; sourceTree = "<group>"; };
-		EE59D3841A86B82000768511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE59D3841A86B82000768511 /* AssignmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsViewController.swift; sourceTree = "<group>"; };
 		EE59D3871A86B82000768511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE59D3891A86B82000768511 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EE59D38C1A86B82000768511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EE59D3921A86B82000768511 /* Homework HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Homework HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59D3971A86B82000768511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE59D3981A86B82000768511 /* Homework_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_HelperTests.swift; sourceTree = "<group>"; };
+		EE7EB1181A86C3A60020A6AB /* Homework Helper-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homework Helper-Header.h"; sourceTree = SOURCE_ROOT; };
+		EE7EB1191A86C4B90020A6AB /* ClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesViewController.swift; sourceTree = "<group>"; };
+		EE7EB11B1A86C4CE0020A6AB /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
+		EE7EB11D1A86C4FE0020A6AB /* TeachersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeachersViewController.swift; sourceTree = "<group>"; };
+		EE7EB11F1A86C5690020A6AB /* AddAssignmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAssignmentViewController.swift; sourceTree = "<group>"; };
+		EE7EB1211A86C5830020A6AB /* ViewAssignmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAssignmentViewController.swift; sourceTree = "<group>"; };
+		EE7EB1241A86C5C50020A6AB /* AddClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClassViewController.swift; sourceTree = "<group>"; };
+		EE7EB1261A86C5EA0020A6AB /* ViewClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewClassViewController.swift; sourceTree = "<group>"; };
+		EE7EB1291A86C6240020A6AB /* AddGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGradeViewController.swift; sourceTree = "<group>"; };
+		EE7EB12B1A86C6330020A6AB /* ViewGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewGradeViewController.swift; sourceTree = "<group>"; };
+		EE7EB12E1A86C65D0020A6AB /* AddTeacherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTeacherViewController.swift; sourceTree = "<group>"; };
+		EE7EB1301A86C6710020A6AB /* ViewTeacherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTeacherViewController.swift; sourceTree = "<group>"; };
+		EE7EB1331A86CC7A0020A6AB /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		EE7EB1351A86CC7A0020A6AB /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		EE7EB1371A86CC7B0020A6AB /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8514A1FBCF4156DDCFB77292 /* libPods-Homework Helper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +92,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CDD889F408B0B0BCB747F46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6875807E98C222256022F1C0 /* libPods-Homework Helper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99D55997066F93B5C2283E40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0165788B3F2EA710B4848CCF /* Pods-Homework Helper.debug.xcconfig */,
+				3EF9D5D40E6E80B035A9DDDD /* Pods-Homework Helper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE59D3711A86B82000768511 = {
 			isa = PBXGroup;
 			children = (
 				EE59D37C1A86B82000768511 /* Homework Helper */,
 				EE59D3951A86B82000768511 /* Homework HelperTests */,
 				EE59D37B1A86B82000768511 /* Products */,
+				99D55997066F93B5C2283E40 /* Pods */,
+				0CDD889F408B0B0BCB747F46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,11 +133,14 @@
 			isa = PBXGroup;
 			children = (
 				EE59D37F1A86B82000768511 /* AppDelegate.swift */,
-				EE59D3841A86B82000768511 /* ViewController.swift */,
+				EE7EB1231A86C5B30020A6AB /* Assignments */,
+				EE7EB1281A86C5F10020A6AB /* Classes */,
+				EE7EB12D1A86C6460020A6AB /* Grades */,
+				EE7EB1321A86C67E0020A6AB /* Teachers */,
 				EE59D3861A86B82000768511 /* Main.storyboard */,
 				EE59D3891A86B82000768511 /* Images.xcassets */,
 				EE59D38B1A86B82000768511 /* LaunchScreen.xib */,
-				EE59D3811A86B82000768511 /* Homework_Helper.xcdatamodeld */,
+				EE7EB1391A86CC860020A6AB /* Core Data */,
 				EE59D37D1A86B82000768511 /* Supporting Files */,
 			);
 			path = "Homework Helper";
@@ -93,6 +149,7 @@
 		EE59D37D1A86B82000768511 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE7EB1181A86C3A60020A6AB /* Homework Helper-Header.h */,
 				EE59D37E1A86B82000768511 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -115,6 +172,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EE7EB1231A86C5B30020A6AB /* Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				EE59D3841A86B82000768511 /* AssignmentsViewController.swift */,
+				EE7EB1211A86C5830020A6AB /* ViewAssignmentViewController.swift */,
+				EE7EB11F1A86C5690020A6AB /* AddAssignmentViewController.swift */,
+			);
+			name = Assignments;
+			sourceTree = "<group>";
+		};
+		EE7EB1281A86C5F10020A6AB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EB1191A86C4B90020A6AB /* ClassesViewController.swift */,
+				EE7EB1261A86C5EA0020A6AB /* ViewClassViewController.swift */,
+				EE7EB1241A86C5C50020A6AB /* AddClassViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EE7EB12D1A86C6460020A6AB /* Grades */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EB11B1A86C4CE0020A6AB /* GradesViewController.swift */,
+				EE7EB12B1A86C6330020A6AB /* ViewGradeViewController.swift */,
+				EE7EB1291A86C6240020A6AB /* AddGradeViewController.swift */,
+			);
+			name = Grades;
+			sourceTree = "<group>";
+		};
+		EE7EB1321A86C67E0020A6AB /* Teachers */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EB11D1A86C4FE0020A6AB /* TeachersViewController.swift */,
+				EE7EB1301A86C6710020A6AB /* ViewTeacherViewController.swift */,
+				EE7EB12E1A86C65D0020A6AB /* AddTeacherViewController.swift */,
+			);
+			name = Teachers;
+			sourceTree = "<group>";
+		};
+		EE7EB1391A86CC860020A6AB /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				EE59D3811A86B82000768511 /* Homework_Helper.xcdatamodeld */,
+				EE7EB1371A86CC7B0020A6AB /* Assignment.swift */,
+				EE7EB1351A86CC7A0020A6AB /* Class.swift */,
+				EE7EB1331A86CC7A0020A6AB /* Teacher.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE59D39C1A86B82000768511 /* Build configuration list for PBXNativeTarget "Homework Helper" */;
 			buildPhases = (
+				BA1043B8111AE047FFF81750 /* Check Pods Manifest.lock */,
 				EE59D3761A86B82000768511 /* Sources */,
 				EE59D3771A86B82000768511 /* Frameworks */,
 				EE59D3781A86B82000768511 /* Resources */,
+				D8BC1F037293CA5557749EB1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +274,7 @@
 				TargetAttributes = {
 					EE59D3791A86B82000768511 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3K22YJAJ77;
 					};
 					EE59D3911A86B82000768511 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -210,14 +321,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA1043B8111AE047FFF81750 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8BC1F037293CA5557749EB1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE59D3761A86B82000768511 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE59D3851A86B82000768511 /* ViewController.swift in Sources */,
+				EE7EB1381A86CC7B0020A6AB /* Assignment.swift in Sources */,
+				EE7EB1221A86C5830020A6AB /* ViewAssignmentViewController.swift in Sources */,
+				EE7EB12A1A86C6240020A6AB /* AddGradeViewController.swift in Sources */,
+				EE7EB1251A86C5C50020A6AB /* AddClassViewController.swift in Sources */,
+				EE59D3851A86B82000768511 /* AssignmentsViewController.swift in Sources */,
 				EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */,
 				EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */,
+				EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */,
+				EE7EB12F1A86C65D0020A6AB /* AddTeacherViewController.swift in Sources */,
+				EE7EB11A1A86C4B90020A6AB /* ClassesViewController.swift in Sources */,
+				EE7EB1311A86C6710020A6AB /* ViewTeacherViewController.swift in Sources */,
+				EE7EB1271A86C5EA0020A6AB /* ViewClassViewController.swift in Sources */,
+				EE7EB11C1A86C4CE0020A6AB /* GradesViewController.swift in Sources */,
+				EE7EB1361A86CC7B0020A6AB /* Class.swift in Sources */,
+				EE7EB12C1A86C6330020A6AB /* ViewGradeViewController.swift in Sources */,
+				EE7EB1201A86C5690020A6AB /* AddAssignmentViewController.swift in Sources */,
+				EE7EB11E1A86C4FE0020A6AB /* TeachersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,21 +496,27 @@
 		};
 		EE59D39D1A86B82000768511 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0165788B3F2EA710B4848CCF /* Pods-Homework Helper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Homework Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper-Header.h";
 			};
 			name = Debug;
 		};
 		EE59D39E1A86B82000768511 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF9D5D40E6E80B035A9DDDD /* Pods-Homework Helper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Homework Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +573,7 @@
 				EE59D39E1A86B82000768511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE59D39F1A86B82000768511 /* Build configuration list for PBXNativeTarget "Homework HelperTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +582,7 @@
 				EE59D3A11A86B82000768511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
