@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
-class AddAssignmentViewController: UIViewController {
+class AddAssignmentViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+        
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func didReceiveMemoryWarning() {
@@ -20,4 +26,11 @@ class AddAssignmentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        
+        // Configure the cell...
+        
+        return cell
+    }
 }

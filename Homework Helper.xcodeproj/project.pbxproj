@@ -10,7 +10,6 @@
 		8514A1FBCF4156DDCFB77292 /* libPods-Homework Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6875807E98C222256022F1C0 /* libPods-Homework Helper.a */; };
 		EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D37F1A86B82000768511 /* AppDelegate.swift */; };
 		EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE59D3811A86B82000768511 /* Homework_Helper.xcdatamodeld */; };
-		EE59D3851A86B82000768511 /* AssignmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D3841A86B82000768511 /* AssignmentsViewController.swift */; };
 		EE59D3881A86B82000768511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE59D3861A86B82000768511 /* Main.storyboard */; };
 		EE59D38A1A86B82000768511 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE59D3891A86B82000768511 /* Images.xcassets */; };
 		EE59D38D1A86B82000768511 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE59D38B1A86B82000768511 /* LaunchScreen.xib */; };
@@ -29,6 +28,7 @@
 		EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1331A86CC7A0020A6AB /* Teacher.swift */; };
 		EE7EB1361A86CC7B0020A6AB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1351A86CC7A0020A6AB /* Class.swift */; };
 		EE7EB1381A86CC7B0020A6AB /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1371A86CC7B0020A6AB /* Assignment.swift */; };
+		EE7EB13D1A86DDDE0020A6AB /* AssignmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 		EE59D37E1A86B82000768511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE59D37F1A86B82000768511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE59D3821A86B82000768511 /* Homework_Helper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homework_Helper.xcdatamodel; sourceTree = "<group>"; };
-		EE59D3841A86B82000768511 /* AssignmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsViewController.swift; sourceTree = "<group>"; };
 		EE59D3871A86B82000768511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE59D3891A86B82000768511 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EE59D38C1A86B82000768511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		EE7EB1331A86CC7A0020A6AB /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		EE7EB1351A86CC7A0020A6AB /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		EE7EB1371A86CC7B0020A6AB /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +175,7 @@
 		EE7EB1231A86C5B30020A6AB /* Assignments */ = {
 			isa = PBXGroup;
 			children = (
-				EE59D3841A86B82000768511 /* AssignmentsViewController.swift */,
+				EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */,
 				EE7EB1211A86C5830020A6AB /* ViewAssignmentViewController.swift */,
 				EE7EB11F1A86C5690020A6AB /* AddAssignmentViewController.swift */,
 			);
@@ -363,12 +363,12 @@
 				EE7EB1221A86C5830020A6AB /* ViewAssignmentViewController.swift in Sources */,
 				EE7EB12A1A86C6240020A6AB /* AddGradeViewController.swift in Sources */,
 				EE7EB1251A86C5C50020A6AB /* AddClassViewController.swift in Sources */,
-				EE59D3851A86B82000768511 /* AssignmentsViewController.swift in Sources */,
 				EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */,
 				EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */,
 				EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */,
 				EE7EB12F1A86C65D0020A6AB /* AddTeacherViewController.swift in Sources */,
 				EE7EB11A1A86C4B90020A6AB /* ClassesViewController.swift in Sources */,
+				EE7EB13D1A86DDDE0020A6AB /* AssignmentsTableViewController.swift in Sources */,
 				EE7EB1311A86C6710020A6AB /* ViewTeacherViewController.swift in Sources */,
 				EE7EB1271A86C5EA0020A6AB /* ViewClassViewController.swift in Sources */,
 				EE7EB11C1A86C4CE0020A6AB /* GradesViewController.swift in Sources */,
