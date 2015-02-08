@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8514A1FBCF4156DDCFB77292 /* libPods-Homework Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6875807E98C222256022F1C0 /* libPods-Homework Helper.a */; };
+		EE1440431A872B4400F0D223 /* PathMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1440411A872B4400F0D223 /* PathMenu.swift */; };
+		EE1440441A872B4400F0D223 /* PathMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1440421A872B4400F0D223 /* PathMenuItem.swift */; };
 		EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D37F1A86B82000768511 /* AppDelegate.swift */; };
 		EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE59D3811A86B82000768511 /* Homework_Helper.xcdatamodeld */; };
 		EE59D3881A86B82000768511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE59D3861A86B82000768511 /* Main.storyboard */; };
@@ -29,6 +31,23 @@
 		EE7EB1361A86CC7B0020A6AB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1351A86CC7A0020A6AB /* Class.swift */; };
 		EE7EB1381A86CC7B0020A6AB /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1371A86CC7B0020A6AB /* Assignment.swift */; };
 		EE7EB13D1A86DDDE0020A6AB /* AssignmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */; };
+		EEA07B241A86EDC5004A962A /* Classes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B231A86EDC5004A962A /* Classes.storyboard */; };
+		EEA07B261A86EDCD004A962A /* Grades.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B251A86EDCD004A962A /* Grades.storyboard */; };
+		EEA07B281A86EDD3004A962A /* Teachers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B271A86EDD3004A962A /* Teachers.storyboard */; };
+		EEA07B371A86F3EA004A962A /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B291A86F3EA004A962A /* bg-addbutton-highlighted.png */; };
+		EEA07B381A86F3EA004A962A /* bg-addbutton-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2A1A86F3EA004A962A /* bg-addbutton-highlighted@2x.png */; };
+		EEA07B391A86F3EA004A962A /* bg-addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2B1A86F3EA004A962A /* bg-addbutton.png */; };
+		EEA07B3A1A86F3EA004A962A /* bg-addbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2C1A86F3EA004A962A /* bg-addbutton@2x.png */; };
+		EEA07B3B1A86F3EA004A962A /* bg-menuitem-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2D1A86F3EA004A962A /* bg-menuitem-highlighted.png */; };
+		EEA07B3C1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2E1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png */; };
+		EEA07B3D1A86F3EA004A962A /* bg-menuitem.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2F1A86F3EA004A962A /* bg-menuitem.png */; };
+		EEA07B3E1A86F3EA004A962A /* bg-menuitem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B301A86F3EA004A962A /* bg-menuitem@2x.png */; };
+		EEA07B3F1A86F3EA004A962A /* icon-plus-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B311A86F3EA004A962A /* icon-plus-highlighted.png */; };
+		EEA07B401A86F3EA004A962A /* icon-plus-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B321A86F3EA004A962A /* icon-plus-highlighted@2x.png */; };
+		EEA07B411A86F3EA004A962A /* icon-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B331A86F3EA004A962A /* icon-plus.png */; };
+		EEA07B421A86F3EA004A962A /* icon-plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B341A86F3EA004A962A /* icon-plus@2x.png */; };
+		EEA07B431A86F3EA004A962A /* icon-star.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B351A86F3EA004A962A /* icon-star.png */; };
+		EEA07B441A86F3EA004A962A /* icon-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B361A86F3EA004A962A /* icon-star@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +64,9 @@
 		0165788B3F2EA710B4848CCF /* Pods-Homework Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		3EF9D5D40E6E80B035A9DDDD /* Pods-Homework Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.release.xcconfig"; sourceTree = "<group>"; };
 		6875807E98C222256022F1C0 /* libPods-Homework Helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Homework Helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0547611A87387E00F690CD /* Homework_Helper-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homework_Helper-Header.h"; sourceTree = "<group>"; };
+		EE1440411A872B4400F0D223 /* PathMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathMenu.swift; sourceTree = "<group>"; };
+		EE1440421A872B4400F0D223 /* PathMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathMenuItem.swift; sourceTree = "<group>"; };
 		EE59D37A1A86B82000768511 /* Homework Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59D37E1A86B82000768511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE59D37F1A86B82000768511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +77,6 @@
 		EE59D3921A86B82000768511 /* Homework HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Homework HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59D3971A86B82000768511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE59D3981A86B82000768511 /* Homework_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_HelperTests.swift; sourceTree = "<group>"; };
-		EE7EB1181A86C3A60020A6AB /* Homework Helper-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homework Helper-Header.h"; sourceTree = SOURCE_ROOT; };
 		EE7EB1191A86C4B90020A6AB /* ClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesViewController.swift; sourceTree = "<group>"; };
 		EE7EB11B1A86C4CE0020A6AB /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		EE7EB11D1A86C4FE0020A6AB /* TeachersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeachersViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +92,23 @@
 		EE7EB1351A86CC7A0020A6AB /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		EE7EB1371A86CC7B0020A6AB /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentsTableViewController.swift; sourceTree = "<group>"; };
+		EEA07B231A86EDC5004A962A /* Classes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Classes.storyboard; sourceTree = "<group>"; };
+		EEA07B251A86EDCD004A962A /* Grades.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Grades.storyboard; sourceTree = "<group>"; };
+		EEA07B271A86EDD3004A962A /* Teachers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Teachers.storyboard; sourceTree = "<group>"; };
+		EEA07B291A86F3EA004A962A /* bg-addbutton-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton-highlighted.png"; sourceTree = "<group>"; };
+		EEA07B2A1A86F3EA004A962A /* bg-addbutton-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton-highlighted@2x.png"; sourceTree = "<group>"; };
+		EEA07B2B1A86F3EA004A962A /* bg-addbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton.png"; sourceTree = "<group>"; };
+		EEA07B2C1A86F3EA004A962A /* bg-addbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton@2x.png"; sourceTree = "<group>"; };
+		EEA07B2D1A86F3EA004A962A /* bg-menuitem-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted.png"; sourceTree = "<group>"; };
+		EEA07B2E1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted@2x.png"; sourceTree = "<group>"; };
+		EEA07B2F1A86F3EA004A962A /* bg-menuitem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem.png"; sourceTree = "<group>"; };
+		EEA07B301A86F3EA004A962A /* bg-menuitem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem@2x.png"; sourceTree = "<group>"; };
+		EEA07B311A86F3EA004A962A /* icon-plus-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus-highlighted.png"; sourceTree = "<group>"; };
+		EEA07B321A86F3EA004A962A /* icon-plus-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus-highlighted@2x.png"; sourceTree = "<group>"; };
+		EEA07B331A86F3EA004A962A /* icon-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus.png"; sourceTree = "<group>"; };
+		EEA07B341A86F3EA004A962A /* icon-plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus@2x.png"; sourceTree = "<group>"; };
+		EEA07B351A86F3EA004A962A /* icon-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star.png"; sourceTree = "<group>"; };
+		EEA07B361A86F3EA004A962A /* icon-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +147,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EE1440401A872B4400F0D223 /* PathMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EE1440411A872B4400F0D223 /* PathMenu.swift */,
+				EE1440421A872B4400F0D223 /* PathMenuItem.swift */,
+			);
+			path = PathMenu;
+			sourceTree = "<group>";
+		};
 		EE59D3711A86B82000768511 = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +184,8 @@
 				EE7EB1281A86C5F10020A6AB /* Classes */,
 				EE7EB12D1A86C6460020A6AB /* Grades */,
 				EE7EB1321A86C67E0020A6AB /* Teachers */,
-				EE59D3861A86B82000768511 /* Main.storyboard */,
 				EE59D3891A86B82000768511 /* Images.xcassets */,
+				EEA07B451A86F3F9004A962A /* Images */,
 				EE59D38B1A86B82000768511 /* LaunchScreen.xib */,
 				EE7EB1391A86CC860020A6AB /* Core Data */,
 				EE59D37D1A86B82000768511 /* Supporting Files */,
@@ -149,8 +196,9 @@
 		EE59D37D1A86B82000768511 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE7EB1181A86C3A60020A6AB /* Homework Helper-Header.h */,
+				EE1440401A872B4400F0D223 /* PathMenu */,
 				EE59D37E1A86B82000768511 /* Info.plist */,
+				EE0547611A87387E00F690CD /* Homework_Helper-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -178,6 +226,7 @@
 				EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */,
 				EE7EB1211A86C5830020A6AB /* ViewAssignmentViewController.swift */,
 				EE7EB11F1A86C5690020A6AB /* AddAssignmentViewController.swift */,
+				EE59D3861A86B82000768511 /* Main.storyboard */,
 			);
 			name = Assignments;
 			sourceTree = "<group>";
@@ -188,6 +237,7 @@
 				EE7EB1191A86C4B90020A6AB /* ClassesViewController.swift */,
 				EE7EB1261A86C5EA0020A6AB /* ViewClassViewController.swift */,
 				EE7EB1241A86C5C50020A6AB /* AddClassViewController.swift */,
+				EEA07B231A86EDC5004A962A /* Classes.storyboard */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -198,6 +248,7 @@
 				EE7EB11B1A86C4CE0020A6AB /* GradesViewController.swift */,
 				EE7EB12B1A86C6330020A6AB /* ViewGradeViewController.swift */,
 				EE7EB1291A86C6240020A6AB /* AddGradeViewController.swift */,
+				EEA07B251A86EDCD004A962A /* Grades.storyboard */,
 			);
 			name = Grades;
 			sourceTree = "<group>";
@@ -208,6 +259,7 @@
 				EE7EB11D1A86C4FE0020A6AB /* TeachersViewController.swift */,
 				EE7EB1301A86C6710020A6AB /* ViewTeacherViewController.swift */,
 				EE7EB12E1A86C65D0020A6AB /* AddTeacherViewController.swift */,
+				EEA07B271A86EDD3004A962A /* Teachers.storyboard */,
 			);
 			name = Teachers;
 			sourceTree = "<group>";
@@ -221,6 +273,27 @@
 				EE7EB1331A86CC7A0020A6AB /* Teacher.swift */,
 			);
 			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		EEA07B451A86F3F9004A962A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EEA07B291A86F3EA004A962A /* bg-addbutton-highlighted.png */,
+				EEA07B2A1A86F3EA004A962A /* bg-addbutton-highlighted@2x.png */,
+				EEA07B2B1A86F3EA004A962A /* bg-addbutton.png */,
+				EEA07B2C1A86F3EA004A962A /* bg-addbutton@2x.png */,
+				EEA07B2D1A86F3EA004A962A /* bg-menuitem-highlighted.png */,
+				EEA07B2E1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png */,
+				EEA07B2F1A86F3EA004A962A /* bg-menuitem.png */,
+				EEA07B301A86F3EA004A962A /* bg-menuitem@2x.png */,
+				EEA07B311A86F3EA004A962A /* icon-plus-highlighted.png */,
+				EEA07B321A86F3EA004A962A /* icon-plus-highlighted@2x.png */,
+				EEA07B331A86F3EA004A962A /* icon-plus.png */,
+				EEA07B341A86F3EA004A962A /* icon-plus@2x.png */,
+				EEA07B351A86F3EA004A962A /* icon-star.png */,
+				EEA07B361A86F3EA004A962A /* icon-star@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +379,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA07B3D1A86F3EA004A962A /* bg-menuitem.png in Resources */,
+				EEA07B401A86F3EA004A962A /* icon-plus-highlighted@2x.png in Resources */,
+				EEA07B431A86F3EA004A962A /* icon-star.png in Resources */,
 				EE59D3881A86B82000768511 /* Main.storyboard in Resources */,
 				EE59D38D1A86B82000768511 /* LaunchScreen.xib in Resources */,
+				EEA07B241A86EDC5004A962A /* Classes.storyboard in Resources */,
+				EEA07B371A86F3EA004A962A /* bg-addbutton-highlighted.png in Resources */,
+				EEA07B261A86EDCD004A962A /* Grades.storyboard in Resources */,
+				EEA07B3B1A86F3EA004A962A /* bg-menuitem-highlighted.png in Resources */,
+				EEA07B3E1A86F3EA004A962A /* bg-menuitem@2x.png in Resources */,
+				EEA07B3F1A86F3EA004A962A /* icon-plus-highlighted.png in Resources */,
+				EEA07B381A86F3EA004A962A /* bg-addbutton-highlighted@2x.png in Resources */,
+				EEA07B3C1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png in Resources */,
+				EEA07B281A86EDD3004A962A /* Teachers.storyboard in Resources */,
+				EEA07B3A1A86F3EA004A962A /* bg-addbutton@2x.png in Resources */,
 				EE59D38A1A86B82000768511 /* Images.xcassets in Resources */,
+				EEA07B421A86F3EA004A962A /* icon-plus@2x.png in Resources */,
+				EEA07B441A86F3EA004A962A /* icon-star@2x.png in Resources */,
+				EEA07B391A86F3EA004A962A /* bg-addbutton.png in Resources */,
+				EEA07B411A86F3EA004A962A /* icon-plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,9 +451,11 @@
 			files = (
 				EE7EB1381A86CC7B0020A6AB /* Assignment.swift in Sources */,
 				EE7EB1221A86C5830020A6AB /* ViewAssignmentViewController.swift in Sources */,
+				EE1440441A872B4400F0D223 /* PathMenuItem.swift in Sources */,
 				EE7EB12A1A86C6240020A6AB /* AddGradeViewController.swift in Sources */,
 				EE7EB1251A86C5C50020A6AB /* AddClassViewController.swift in Sources */,
 				EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */,
+				EE1440431A872B4400F0D223 /* PathMenu.swift in Sources */,
 				EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */,
 				EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */,
 				EE7EB12F1A86C65D0020A6AB /* AddTeacherViewController.swift in Sources */,
@@ -500,10 +592,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Homework Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper/Homework_Helper-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -513,10 +607,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Homework Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper/Homework_Helper-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

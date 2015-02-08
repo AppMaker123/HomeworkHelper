@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class GradesViewController: UITableViewController {
+class GradesViewController: UIViewController, UITableViewDelegate, PathMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,9 @@ class GradesViewController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        createPathMenu()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,22 +29,93 @@ class GradesViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Path Menu
+    
+    func createPathMenu() {
+        // Define the Images to be used in the menu
+        let storyMenuItemImage        = UIImage(named: "bg-menuitem.png")
+        let storyMenuItemImagePressed = UIImage(named: "bg-menuitem-highlighted.png")
+        let starImage                 = UIImage(named: "icon-star.png")
+        
+        // Define the Menu Items
+        let starMenuItem1 = PathMenuItem(image: storyMenuItemImage, highlightedImage: storyMenuItemImagePressed, contentImage: starImage, highlightedContentImage: starImage)
+        let starMenuItem2 = PathMenuItem(image: storyMenuItemImage, highlightedImage: storyMenuItemImagePressed, contentImage: starImage, highlightedContentImage: starImage)
+        let starMenuItem3 = PathMenuItem(image: storyMenuItemImage, highlightedImage: storyMenuItemImagePressed, contentImage: starImage, highlightedContentImage: starImage)
+        let starMenuItem4 = PathMenuItem(image: storyMenuItemImage, highlightedImage: storyMenuItemImagePressed, contentImage: starImage, highlightedContentImage: starImage)
+        
+        var menus: [PathMenuItem] = [starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4]
+        
+        let startItem: PathMenuItem = PathMenuItem(image: UIImage(named: "bg-addbutton"), highlightedImage: UIImage(named: "bg-addbutton-highlighted"), contentImage: UIImage(named: "icon-plus"), highlightedContentImage: UIImage(named: "icon-plus-highlighted"))
+        
+        var menu: PathMenu = PathMenu(frame: view.bounds, startItem: startItem, optionMenus: menus)
+        
+        menu.startPoint = CGPoint(x: view.frame.size.width - 50.0, y: view.frame.size.height - 50.0)
+        
+        menu.menuWholeAngle = CGFloat(M_PI / 180 * 95)
+        menu.rotateAngle    = CGFloat(M_PI / 180 * -95)
+        menu.farRadius      = 120.0
+        menu.nearRadius     = 100.0
+        menu.endRadius      = 100.0
+        menu.timeOffset     = 0.0
+        menu.delegate       = self
+        view.addSubview(menu)
+        view.bringSubviewToFront(menu)
+        
+    }
+    
+    func pathMenu(menu: PathMenu, didSelectIndex idx: Int) {
+        switch idx {
+        case 0: // Assignments
+            var storyboard = UIStoryboard(name: "Main", bundle: nil)
+            var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+            
+            self.presentViewController(controller, animated: true, completion: nil)
+            
+            break
+        case 1: // Grades
+            var storyboard = UIStoryboard(name: "Grades", bundle: nil)
+            var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+            
+            self.presentViewController(controller, animated: true, completion: nil)
+            
+            break
+        case 2: // Classes
+            var storyboard = UIStoryboard(name: "Classes", bundle: nil)
+            var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+            
+            self.presentViewController(controller, animated: true, completion: nil)
+            
+            break
+        case 3: // Teachers
+            var storyboard = UIStoryboard(name: "Teachers", bundle: nil)
+            var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+            
+            self.presentViewController(controller, animated: true, completion: nil)
+            
+            break
+        default: // Default
+            break
+        }
+    }
+    
+    // MARK: End Path Menu -
+    
     // MARK: - Table view data source
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return tableView.numberOfRowsInSection(section);
+        return 1;
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
     
         // Configure the cell...
@@ -50,7 +124,7 @@ class GradesViewController: UITableViewController {
     }
     
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
