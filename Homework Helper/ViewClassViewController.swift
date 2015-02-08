@@ -15,6 +15,8 @@ class ViewClassViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        navigationController?.navigationBar.shadowImage = UIImage(named: "green-shadow")
     }
     
     override func didReceiveMemoryWarning() {

@@ -15,6 +15,8 @@ class ViewGradeViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        navigationController?.navigationBar.shadowImage = UIImage(named: "yellow-shadow")
     }
     
     override func didReceiveMemoryWarning() {

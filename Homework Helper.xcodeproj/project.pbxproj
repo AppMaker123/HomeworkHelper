@@ -34,20 +34,14 @@
 		EEA07B241A86EDC5004A962A /* Classes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B231A86EDC5004A962A /* Classes.storyboard */; };
 		EEA07B261A86EDCD004A962A /* Grades.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B251A86EDCD004A962A /* Grades.storyboard */; };
 		EEA07B281A86EDD3004A962A /* Teachers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B271A86EDD3004A962A /* Teachers.storyboard */; };
-		EEA07B371A86F3EA004A962A /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B291A86F3EA004A962A /* bg-addbutton-highlighted.png */; };
-		EEA07B381A86F3EA004A962A /* bg-addbutton-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2A1A86F3EA004A962A /* bg-addbutton-highlighted@2x.png */; };
-		EEA07B391A86F3EA004A962A /* bg-addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2B1A86F3EA004A962A /* bg-addbutton.png */; };
-		EEA07B3A1A86F3EA004A962A /* bg-addbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2C1A86F3EA004A962A /* bg-addbutton@2x.png */; };
 		EEA07B3B1A86F3EA004A962A /* bg-menuitem-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2D1A86F3EA004A962A /* bg-menuitem-highlighted.png */; };
 		EEA07B3C1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2E1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png */; };
 		EEA07B3D1A86F3EA004A962A /* bg-menuitem.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B2F1A86F3EA004A962A /* bg-menuitem.png */; };
 		EEA07B3E1A86F3EA004A962A /* bg-menuitem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B301A86F3EA004A962A /* bg-menuitem@2x.png */; };
-		EEA07B3F1A86F3EA004A962A /* icon-plus-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B311A86F3EA004A962A /* icon-plus-highlighted.png */; };
-		EEA07B401A86F3EA004A962A /* icon-plus-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B321A86F3EA004A962A /* icon-plus-highlighted@2x.png */; };
-		EEA07B411A86F3EA004A962A /* icon-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B331A86F3EA004A962A /* icon-plus.png */; };
-		EEA07B421A86F3EA004A962A /* icon-plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B341A86F3EA004A962A /* icon-plus@2x.png */; };
 		EEA07B431A86F3EA004A962A /* icon-star.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B351A86F3EA004A962A /* icon-star.png */; };
 		EEA07B441A86F3EA004A962A /* icon-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B361A86F3EA004A962A /* icon-star@2x.png */; };
+		EEE426321A87F24000F84105 /* HomeworkColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE426311A87F24000F84105 /* HomeworkColor+UIColor.swift */; };
+		EEE426341A87FAC000F84105 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE426331A87FAC000F84105 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,20 +89,14 @@
 		EEA07B231A86EDC5004A962A /* Classes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Classes.storyboard; sourceTree = "<group>"; };
 		EEA07B251A86EDCD004A962A /* Grades.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Grades.storyboard; sourceTree = "<group>"; };
 		EEA07B271A86EDD3004A962A /* Teachers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Teachers.storyboard; sourceTree = "<group>"; };
-		EEA07B291A86F3EA004A962A /* bg-addbutton-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton-highlighted.png"; sourceTree = "<group>"; };
-		EEA07B2A1A86F3EA004A962A /* bg-addbutton-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton-highlighted@2x.png"; sourceTree = "<group>"; };
-		EEA07B2B1A86F3EA004A962A /* bg-addbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton.png"; sourceTree = "<group>"; };
-		EEA07B2C1A86F3EA004A962A /* bg-addbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton@2x.png"; sourceTree = "<group>"; };
 		EEA07B2D1A86F3EA004A962A /* bg-menuitem-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted.png"; sourceTree = "<group>"; };
 		EEA07B2E1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted@2x.png"; sourceTree = "<group>"; };
 		EEA07B2F1A86F3EA004A962A /* bg-menuitem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem.png"; sourceTree = "<group>"; };
 		EEA07B301A86F3EA004A962A /* bg-menuitem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem@2x.png"; sourceTree = "<group>"; };
-		EEA07B311A86F3EA004A962A /* icon-plus-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus-highlighted.png"; sourceTree = "<group>"; };
-		EEA07B321A86F3EA004A962A /* icon-plus-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus-highlighted@2x.png"; sourceTree = "<group>"; };
-		EEA07B331A86F3EA004A962A /* icon-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus.png"; sourceTree = "<group>"; };
-		EEA07B341A86F3EA004A962A /* icon-plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus@2x.png"; sourceTree = "<group>"; };
 		EEA07B351A86F3EA004A962A /* icon-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star.png"; sourceTree = "<group>"; };
 		EEA07B361A86F3EA004A962A /* icon-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star@2x.png"; sourceTree = "<group>"; };
+		EEE426311A87F24000F84105 /* HomeworkColor+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeworkColor+UIColor.swift"; sourceTree = "<group>"; };
+		EEE426331A87FAC000F84105 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,9 +168,11 @@
 			isa = PBXGroup;
 			children = (
 				EE59D37F1A86B82000768511 /* AppDelegate.swift */,
+				EEE426311A87F24000F84105 /* HomeworkColor+UIColor.swift */,
+				EEE426331A87FAC000F84105 /* Menu.swift */,
 				EE7EB1231A86C5B30020A6AB /* Assignments */,
-				EE7EB1281A86C5F10020A6AB /* Classes */,
 				EE7EB12D1A86C6460020A6AB /* Grades */,
+				EE7EB1281A86C5F10020A6AB /* Classes */,
 				EE7EB1321A86C67E0020A6AB /* Teachers */,
 				EE59D3891A86B82000768511 /* Images.xcassets */,
 				EEA07B451A86F3F9004A962A /* Images */,
@@ -278,18 +268,10 @@
 		EEA07B451A86F3F9004A962A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				EEA07B291A86F3EA004A962A /* bg-addbutton-highlighted.png */,
-				EEA07B2A1A86F3EA004A962A /* bg-addbutton-highlighted@2x.png */,
-				EEA07B2B1A86F3EA004A962A /* bg-addbutton.png */,
-				EEA07B2C1A86F3EA004A962A /* bg-addbutton@2x.png */,
 				EEA07B2D1A86F3EA004A962A /* bg-menuitem-highlighted.png */,
 				EEA07B2E1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png */,
 				EEA07B2F1A86F3EA004A962A /* bg-menuitem.png */,
 				EEA07B301A86F3EA004A962A /* bg-menuitem@2x.png */,
-				EEA07B311A86F3EA004A962A /* icon-plus-highlighted.png */,
-				EEA07B321A86F3EA004A962A /* icon-plus-highlighted@2x.png */,
-				EEA07B331A86F3EA004A962A /* icon-plus.png */,
-				EEA07B341A86F3EA004A962A /* icon-plus@2x.png */,
 				EEA07B351A86F3EA004A962A /* icon-star.png */,
 				EEA07B361A86F3EA004A962A /* icon-star@2x.png */,
 			);
@@ -380,25 +362,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA07B3D1A86F3EA004A962A /* bg-menuitem.png in Resources */,
-				EEA07B401A86F3EA004A962A /* icon-plus-highlighted@2x.png in Resources */,
 				EEA07B431A86F3EA004A962A /* icon-star.png in Resources */,
 				EE59D3881A86B82000768511 /* Main.storyboard in Resources */,
 				EE59D38D1A86B82000768511 /* LaunchScreen.xib in Resources */,
 				EEA07B241A86EDC5004A962A /* Classes.storyboard in Resources */,
-				EEA07B371A86F3EA004A962A /* bg-addbutton-highlighted.png in Resources */,
 				EEA07B261A86EDCD004A962A /* Grades.storyboard in Resources */,
 				EEA07B3B1A86F3EA004A962A /* bg-menuitem-highlighted.png in Resources */,
 				EEA07B3E1A86F3EA004A962A /* bg-menuitem@2x.png in Resources */,
-				EEA07B3F1A86F3EA004A962A /* icon-plus-highlighted.png in Resources */,
-				EEA07B381A86F3EA004A962A /* bg-addbutton-highlighted@2x.png in Resources */,
 				EEA07B3C1A86F3EA004A962A /* bg-menuitem-highlighted@2x.png in Resources */,
 				EEA07B281A86EDD3004A962A /* Teachers.storyboard in Resources */,
-				EEA07B3A1A86F3EA004A962A /* bg-addbutton@2x.png in Resources */,
 				EE59D38A1A86B82000768511 /* Images.xcassets in Resources */,
-				EEA07B421A86F3EA004A962A /* icon-plus@2x.png in Resources */,
 				EEA07B441A86F3EA004A962A /* icon-star@2x.png in Resources */,
-				EEA07B391A86F3EA004A962A /* bg-addbutton.png in Resources */,
-				EEA07B411A86F3EA004A962A /* icon-plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +432,7 @@
 				EE1440431A872B4400F0D223 /* PathMenu.swift in Sources */,
 				EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */,
 				EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */,
+				EEE426341A87FAC000F84105 /* Menu.swift in Sources */,
 				EE7EB12F1A86C65D0020A6AB /* AddTeacherViewController.swift in Sources */,
 				EE7EB11A1A86C4B90020A6AB /* ClassesViewController.swift in Sources */,
 				EE7EB13D1A86DDDE0020A6AB /* AssignmentsTableViewController.swift in Sources */,
@@ -466,6 +441,7 @@
 				EE7EB11C1A86C4CE0020A6AB /* GradesViewController.swift in Sources */,
 				EE7EB1361A86CC7B0020A6AB /* Class.swift in Sources */,
 				EE7EB12C1A86C6330020A6AB /* ViewGradeViewController.swift in Sources */,
+				EEE426321A87F24000F84105 /* HomeworkColor+UIColor.swift in Sources */,
 				EE7EB1201A86C5690020A6AB /* AddAssignmentViewController.swift in Sources */,
 				EE7EB11E1A86C4FE0020A6AB /* TeachersViewController.swift in Sources */,
 			);
