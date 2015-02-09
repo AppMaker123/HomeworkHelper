@@ -195,10 +195,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="delegate" destination="Ckz-Sw-SRY" id="3HV-dn-KeS"/>
                         <segue destination="gw7-Dp-dkG" kind="relationship" relationship="rootViewController" id="V9i-UD-fjp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXq-Zs-Lzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Ckz-Sw-SRY" customClass="NavigationControllerDelegate" customModule="Homework_Helper" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="414" y="452"/>
         </scene>

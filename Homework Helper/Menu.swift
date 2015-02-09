@@ -16,15 +16,12 @@ import UIKit
 class Menu: NSObject, PathMenuDelegate, MenuDelegate {
     
     var delegate: MenuDelegate?
+    var indx:Int?
     
     func createPathMenu() {
         let view = delegate?.getCurrentViewController!().view
         
         // Define the Images to be used in the menu
-        let storyMenuItemImage        = UIImage(named: "bg-menuitem.png")
-        let storyMenuItemImagePressed = UIImage(named: "bg-menuitem-highlighted.png")
-        let starImage                 = UIImage(named: "icon-star.png")
-        
         let menuItemBackground = [
             UIImage(named: "bg-icon-blue"),
             UIImage(named: "bg-icon-yellow"),
@@ -49,7 +46,7 @@ class Menu: NSObject, PathMenuDelegate, MenuDelegate {
         
         var menus: [PathMenuItem] = [starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4]
         
-        let startItem: PathMenuItem = PathMenuItem(image: UIImage(named: "bg-menu-button"), highlightedImage: UIImage(named: "bg-menu-button-pressed"), contentImage: UIImage(named: "menu-icon"), highlightedContentImage: UIImage(named: "menu-icon-pressed"))
+        let startItem: PathMenuItem = PathMenuItem(image: UIImage(named: "bg-menu-button"), highlightedImage: UIImage(named: "bg-menu-button-pressed"), contentImage: UIImage(), highlightedContentImage: UIImage())
         
         var menu: PathMenu = PathMenu(frame: view?.bounds, startItem: startItem, optionMenus: menus)
         
@@ -58,9 +55,9 @@ class Menu: NSObject, PathMenuDelegate, MenuDelegate {
         menu.menuWholeAngle = CGFloat(M_PI / 180 * 95)
         menu.rotateAngle    = CGFloat(M_PI / 180 * -95)
         menu.farRadius      = 120.0
-        menu.nearRadius     = 100.0
+        menu.nearRadius     = 95.0
         menu.endRadius      = 100.0
-        menu.timeOffset     = 0.0
+        menu.timeOffset     = 0.025
         menu.delegate       = self
         view?.addSubview(menu)
         view?.bringSubviewToFront(menu)
@@ -68,37 +65,48 @@ class Menu: NSObject, PathMenuDelegate, MenuDelegate {
     }
     
     func pathMenu(menu: PathMenu, didSelectIndex idx: Int) {
-        switch idx {
-        case 0: // Assignments
-            var storyboard = UIStoryboard(name: "Main", bundle: nil)
-            var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+        
+        // Delays showing the next view to allow the animation to finish first
+        let delayInSeconds = 0.4
+        let startTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delayInSeconds * Double(NSEC_PER_SEC)))
+        dispatch_after(startTime, dispatch_get_main_queue()) { () -> Void in
             
-            delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
+            switch idx {
+            case 0: // Assignments
+                var storyboard = UIStoryboard(name: "Main", bundle: nil)
+                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+                controller.modalTransitionStyle = .CrossDissolve
+                self.delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
+                var viewController = self.delegate?.getCurrentViewController!()
+                
+                break
+            case 1: // Grades
+                var storyboard = UIStoryboard(name: "Grades", bundle: nil)
+                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+                
+                self.delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
+                
+                break
+            case 2: // Classes
+                var storyboard = UIStoryboard(name: "Classes", bundle: nil)
+                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+                
+                self.delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
+                
+                break
+            case 3: // Teachers
+                var storyboard = UIStoryboard(name: "Teachers", bundle: nil)
+                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+                
+                self.delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
+                
+                break
+            default: // Default
+                break
+            }
             
-            break
-        case 1: // Grades
-            var storyboard = UIStoryboard(name: "Grades", bundle: nil)
-            var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
-            
-            delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
-            
-            break
-        case 2: // Classes
-            var storyboard = UIStoryboard(name: "Classes", bundle: nil)
-            var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
-            
-            delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
-            
-            break
-        case 3: // Teachers
-            var storyboard = UIStoryboard(name: "Teachers", bundle: nil)
-            var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
-            
-            delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
-            
-            break
-        default: // Default
-            break
         }
+
     }
+    
 }

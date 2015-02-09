@@ -41,6 +41,8 @@ private func RotateCGPointAroundCenter(point: CGPoint, center:CGPoint, angle: CG
 
 class PathMenu: UIView, PathMenuItemDelegate {
    
+    var hamburgerButtonCloseBig:LBHamburgerButton!
+    
     enum State {
         case Close // Intial state
         case Expand
@@ -83,6 +85,12 @@ class PathMenu: UIView, PathMenuItemDelegate {
         startButton.delegate = self
         startButton.center = startPoint
         addSubview(startButton)
+        
+        hamburgerButtonCloseBig = LBHamburgerButton(frame: CGRect(x: 0, y: 0, width: 45, height: 45), type: LBHamburgerButtonType.CloseButton, lineWidth: 30, lineHeight: 30/6, lineSpacing: 7, lineCenter: CGPoint(x: 50, y: 50), color: UIColor.whiteColor())
+        hamburgerButtonCloseBig.center = CGPoint(x: self.frame.size.width - 83.0, y: self.frame.size.height - 147.5)
+        self.addSubview(hamburgerButtonCloseBig)
+        bringSubviewToFront(hamburgerButtonCloseBig)
+        
     }
 
     var _menusArray: [PathMenuItem] = []
@@ -263,7 +271,7 @@ class PathMenu: UIView, PathMenuItemDelegate {
             selector = "expand"
             flag = 0
             motionState = State.Expand
-            angle = CGFloat(M_PI_2) + CGFloat(M_PI)
+            angle = CGFloat(M_PI_4) + CGFloat(M_PI)
         case .Expand:
             delegate?.pathMenuWillAnimateClose?(self)
             selector = "close"
@@ -273,15 +281,19 @@ class PathMenu: UIView, PathMenuItemDelegate {
         }
         
         if let rotateAddButton = rotateAddButton {
-            UIView.animateWithDuration(Double(startMenuAnimationDuration!), animations: { () -> Void in
-                self.startButton.transform = CGAffineTransformMakeRotation(angle!)
-            })
+            buttonPressed(hamburgerButtonCloseBig)
+
         }
         
-        if (timer == nil) {
+        if timer == nil {
             timer = NSTimer.scheduledTimerWithTimeInterval(Double(timeOffset!), target: self, selector: selector!, userInfo: nil, repeats: true)
             NSRunLoop.currentRunLoop().addTimer(timer!, forMode: NSRunLoopCommonModes)
         }
+    }
+    
+    func buttonPressed(sender: UIButton) {
+        var btn = sender as LBHamburgerButton
+        btn.switchState()
     }
     
     func expand() {

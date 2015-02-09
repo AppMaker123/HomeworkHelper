@@ -29,6 +29,7 @@ class AssignmentsTableViewController: UIViewController, UITableViewDelegate, Men
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         navigationController?.navigationBar.shadowImage = UIImage(named: "blue-shadow")
+        
     }
     
     func getCurrentViewController() -> UIViewController {
