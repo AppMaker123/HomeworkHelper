@@ -286,6 +286,7 @@
 				EE59D3761A86B82000768511 /* Sources */,
 				EE59D3771A86B82000768511 /* Frameworks */,
 				EE59D3781A86B82000768511 /* Resources */,
+				EECCC4391A959285006022BA /* Update Build Version */,
 				D8BC1F037293CA5557749EB1 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -408,6 +409,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		EECCC4391A959285006022BA /* Update Build Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "GIT_RELEASE_VERSION=$(git describe --tags --always --dirty)\nCOMMITS=$(git rev-list HEAD | wc -l)\nCOMMITS=$(($COMMITS))\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleShortVersionString\" \"${GIT_RELEASE_VERSION#*v}\"\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleVersion\" \"${COMMITS}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
