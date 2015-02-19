@@ -153,7 +153,7 @@ class LBHamburgerButton: UIButton {
                 if !anim.removedOnCompletion {
                     layer.addAnimation(anim, forKey: anim.keyPath)
                 } else {
-                    layer.addAnimation(anim, value: anim.values.last as NSValue, keyPath: anim.keyPath)
+                    layer.addAnimation(anim, value: anim.values.last as! NSValue, keyPath: anim.keyPath)
                 }
             }
             index++

@@ -9,20 +9,22 @@
 import UIKit
 import CoreData
 
-class AssignmentsTableViewController: UIViewController, UITableViewDelegate, MenuDelegate, PathMenuDelegate {
+class AssignmentsTableViewController: UIViewController, UITableViewDelegate, MenuDelegate, PathMenuDelegate, NSFetchedResultsControllerDelegate {
+
+    var fetchedResultsController : NSFetchedResultsController!
+    var coreDataStack: CoreDataStack!
 
     @IBOutlet var tableView: UITableView!
     
     let menu = Menu()
     
+    var currentClass: Class!
+    var assignment: Assignment!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableView.registerClass(HomeworkCell.self, forCellReuseIdentifier: "Cell")
         
         menu.delegate = self
         menu.createPathMenu()
@@ -30,6 +32,26 @@ class AssignmentsTableViewController: UIViewController, UITableViewDelegate, Men
         navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         navigationController?.navigationBar.shadowImage = UIImage(named: "blue-shadow")
         
+        /*let fetchRequest = NSFetchRequest(entityName: "Assignment")
+        
+        let dateSort = NSSortDescriptor(key: "dueDate", ascending: false)
+        let nameSort = NSSortDescriptor(key: "name", ascending: true)
+        
+        fetchRequest.sortDescriptors = [dateSort, nameSort]
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: coreDataStack.context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        fetchedResultsController.delegate = self
+
+        var error: NSError? =  nil
+        if (!fetchedResultsController.performFetch(&error)) {
+            println("Error: \(error?.localizedDescription)")
+        }*/
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+
     }
     
     func getCurrentViewController() -> UIViewController {
@@ -41,26 +63,53 @@ class AssignmentsTableViewController: UIViewController, UITableViewDelegate, Men
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
+    // MARK: - UITableViewDataSource
+    
+    func numberOfSectionsInTableView (tableView: UITableView) -> Int {
         return 1
     }
-
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 1;
+        
+        //let sectionInfo = fetchedResultsController.sections![section] as! NSFetchedResultsSectionInfo
+        
+        return 1
     }
-
+    
+    // TODO: Add a 'rate us' button at index 5 (inline and unintrusive -- Circa)
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-
+        
+        var cell:HomeworkCell = tableView.dequeueReusableCellWithIdentifier("Cell") as! HomeworkCell
+        
+        configureCell(cell, indexPath: indexPath)
+        
         return cell
+    }
+    
+    func configureCell(cell: HomeworkCell, indexPath: NSIndexPath) {
+        /*
+        let assignment = fetchedResultsController.objectAtIndexPath(indexPath) as! Assignment
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .ShortStyle
+        
+        cell.backgroundColor = UIColor.clearColor()
+        cell.title = assignment.name
+        cell.color = currentClass.color as! UIColor
+        cell.txtTopRight = "Due:"
+        cell.txtBottomRight = dateFormatter.stringFromDate(assignment.dueDate)
+        cell.shortName = currentClass.fourCharName.uppercaseString
+        */
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .ShortStyle
+        
+        cell.backgroundColor = UIColor.clearColor()
+        cell.title = "Hello, World!"
+        cell.color = UIColor.hhGreenColor()
+        cell.txtTopRight = "Due:"
+        cell.txtBottomRight = dateFormatter.stringFromDate(NSDate())
+        cell.shortName = "Swift".uppercaseString
     }
     
     // Override to support editing the table view.
@@ -73,14 +122,12 @@ class AssignmentsTableViewController: UIViewController, UITableViewDelegate, Men
         }    
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        let addAssignmentVC = segue.destinationViewController as! AddAssignmentViewController
     }
-    */
-
 }

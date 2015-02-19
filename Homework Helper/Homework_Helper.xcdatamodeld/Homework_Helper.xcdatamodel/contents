@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14D72i" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Assignment" representedClassName="Assignment" syncable="YES">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7517.1" systemVersion="14D72i" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Assignment" representedClassName="Homework_Helper.Assignment" syncable="YES">
         <attribute name="dueDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="grade" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="classRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Class" inverseName="assignmentRelationship" inverseEntity="Class" syncable="YES"/>
+        <relationship name="classs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Class" inverseName="assignments" inverseEntity="Class" syncable="YES"/>
     </entity>
-    <entity name="Class" representedClassName="Class" syncable="YES">
+    <entity name="Class" representedClassName="Homework_Helper.Class" syncable="YES">
         <attribute name="classNumber" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="color" attributeType="Transformable" syncable="YES"/>
         <attribute name="currentGrade" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
@@ -18,10 +18,10 @@
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="teacherName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="assignmentRelationship" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Assignment" inverseName="classRelationship" inverseEntity="Assignment" syncable="YES"/>
+        <relationship name="assignments" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Assignment" inverseName="classs" inverseEntity="Assignment" syncable="YES"/>
         <relationship name="teacherRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="classRelationship" inverseEntity="Teacher" syncable="YES"/>
     </entity>
-    <entity name="Teacher" representedClassName="Teacher" syncable="YES">
+    <entity name="Teacher" representedClassName="Homework_Helper.Teacher" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
@@ -29,8 +29,8 @@
         <relationship name="classRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Class" inverseName="teacherRelationship" inverseEntity="Class" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Teacher" positionX="-108" positionY="18" width="128" height="118"/>
         <element name="Class" positionX="117" positionY="-207" width="128" height="223"/>
-        <element name="Assignment" positionX="360" positionY="-13" width="128" height="118"/>
+        <element name="Teacher" positionX="-108" positionY="18" width="128" height="118"/>
+        <element name="Assignment" positionX="331" positionY="-49" width="128" height="118"/>
     </elements>
 </model>

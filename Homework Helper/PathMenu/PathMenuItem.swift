@@ -73,16 +73,16 @@ class PathMenuItem: UIImageView {
             imageView.frame = CGRectMake(self.bounds.size.width/2 - imgWidth/2, self.bounds.size.height/2 - imgHeight/2, imgWidth, imgHeight)
         }
     }
-    
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.highlighted = true
         if self.delegate.respondsToSelector("PathMenuItemTouchesBegan:") {
             self.delegate.PathMenuItemTouchesBegan(self)
         }
     }
     
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
-        let location:CGPoint? = touches.anyObject()?.locationInView(self)
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+        let touched = touches as NSSet
+        let location:CGPoint? = touched.anyObject()?.locationInView(self)
         if let loc = location {
             if (!CGRectContainsPoint(ScaleRect(self.bounds, n: 2.0), loc))
             {
@@ -91,19 +91,19 @@ class PathMenuItem: UIImageView {
         }
     }
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.highlighted = false
-        let location: CGPoint? = touches.anyObject()?.locationInView(self)
+        let touched = touches as NSSet
+        let location: CGPoint? = touched.anyObject()?.locationInView(self)
         if let loc = location {
             if (CGRectContainsPoint(ScaleRect(self.bounds, n: 2.0), loc))
             {
                 self.delegate.PathMenuItemTouchesEnd(self)
             }
         }
-
     }
     
-    override func touchesCancelled(touches: NSSet!, withEvent event: UIEvent!) {
+    override func touchesCancelled(touches: Set<NSObject>, withEvent event: UIEvent!) {
         self.highlighted = false
     }
     

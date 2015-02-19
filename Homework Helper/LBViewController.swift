@@ -28,7 +28,7 @@ class LBViewController: UIViewController {
     }
     
     func buttonPressed(sender: UIButton) {
-        var btn = sender as LBHamburgerButton
+        var btn = sender as! LBHamburgerButton
         btn.switchState()
     }
 

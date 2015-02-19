@@ -67,37 +67,36 @@ class Menu: NSObject, PathMenuDelegate, MenuDelegate {
     func pathMenu(menu: PathMenu, didSelectIndex idx: Int) {
         
         // Delays showing the next view to allow the animation to finish first
-        let delayInSeconds = 0.4
+        let delayInSeconds = 0.2
         let startTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delayInSeconds * Double(NSEC_PER_SEC)))
         dispatch_after(startTime, dispatch_get_main_queue()) { () -> Void in
             
             switch idx {
             case 0: // Assignments
                 var storyboard = UIStoryboard(name: "Main", bundle: nil)
-                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as! UIViewController
                 controller.modalTransitionStyle = .CrossDissolve
                 self.delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
-                var viewController = self.delegate?.getCurrentViewController!()
                 
                 break
             case 1: // Grades
                 var storyboard = UIStoryboard(name: "Grades", bundle: nil)
-                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
-                
+                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as! UIViewController
+                controller.modalTransitionStyle = .CrossDissolve
                 self.delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
                 
                 break
             case 2: // Classes
                 var storyboard = UIStoryboard(name: "Classes", bundle: nil)
-                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
-                
+                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as! UIViewController
+                controller.modalTransitionStyle = .CrossDissolve
                 self.delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
                 
                 break
             case 3: // Teachers
                 var storyboard = UIStoryboard(name: "Teachers", bundle: nil)
-                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
-                
+                var controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as! UIViewController
+                controller.modalTransitionStyle = .CrossDissolve
                 self.delegate?.getCurrentViewController!().presentViewController(controller, animated: true, completion: nil)
                 
                 break

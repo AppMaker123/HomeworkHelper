@@ -214,7 +214,7 @@ class PathMenu: UIView, PathMenuItemDelegate {
     
     // UIGestureRecognizer
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         handleTap()
     }
     
@@ -292,7 +292,7 @@ class PathMenu: UIView, PathMenuItemDelegate {
     }
     
     func buttonPressed(sender: UIButton) {
-        var btn = sender as LBHamburgerButton
+        var btn = sender as! LBHamburgerButton
         btn.switchState()
     }
     
@@ -305,7 +305,7 @@ class PathMenu: UIView, PathMenuItemDelegate {
         }
         
         let tag: Int = 1000 + flag!
-        var item: PathMenuItem = viewWithTag(tag) as PathMenuItem
+        var item: PathMenuItem = viewWithTag(tag) as! PathMenuItem
         
         //let rotateAnimation: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
         //rotateAnimation.values = [NSNumber(float: 0.0), NSNumber(float: Float(expandRotation!)), NSNumber(float: 0.0)]
@@ -348,7 +348,7 @@ class PathMenu: UIView, PathMenuItemDelegate {
         }
         
         let tag :Int = 1000 + flag!
-        var item: PathMenuItem = viewWithTag(tag) as PathMenuItem
+        var item: PathMenuItem = viewWithTag(tag) as! PathMenuItem
         
         //let rotateAnimation: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
         //rotateAnimation.values = [NSNumber(float: 0.0), NSNumber(float: Float(closeRotation!)), NSNumber(float: 0.0)]

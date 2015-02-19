@@ -10,12 +10,15 @@
 		8514A1FBCF4156DDCFB77292 /* libPods-Homework Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6875807E98C222256022F1C0 /* libPods-Homework Helper.a */; };
 		EE1440431A872B4400F0D223 /* PathMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1440411A872B4400F0D223 /* PathMenu.swift */; };
 		EE1440441A872B4400F0D223 /* PathMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1440421A872B4400F0D223 /* PathMenuItem.swift */; };
+		EE45F9171A8FCA79005E00BF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45F9161A8FCA79005E00BF /* CoreDataStack.swift */; };
+		EE45F9191A900018005E00BF /* HomeworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45F9181A900018005E00BF /* HomeworkCell.swift */; };
 		EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D37F1A86B82000768511 /* AppDelegate.swift */; };
 		EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE59D3811A86B82000768511 /* Homework_Helper.xcdatamodeld */; };
 		EE59D3881A86B82000768511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE59D3861A86B82000768511 /* Main.storyboard */; };
 		EE59D38A1A86B82000768511 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE59D3891A86B82000768511 /* Images.xcassets */; };
 		EE59D38D1A86B82000768511 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE59D38B1A86B82000768511 /* LaunchScreen.xib */; };
 		EE59D3991A86B82000768511 /* Homework_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D3981A86B82000768511 /* Homework_HelperTests.swift */; };
+		EE71555B1A8EC5EB0060D776 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71555A1A8EC5EB0060D776 /* Class.swift */; };
 		EE7EB11A1A86C4B90020A6AB /* ClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1191A86C4B90020A6AB /* ClassesViewController.swift */; };
 		EE7EB11C1A86C4CE0020A6AB /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB11B1A86C4CE0020A6AB /* GradesViewController.swift */; };
 		EE7EB11E1A86C4FE0020A6AB /* TeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB11D1A86C4FE0020A6AB /* TeachersViewController.swift */; };
@@ -28,12 +31,12 @@
 		EE7EB12F1A86C65D0020A6AB /* AddTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB12E1A86C65D0020A6AB /* AddTeacherViewController.swift */; };
 		EE7EB1311A86C6710020A6AB /* ViewTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1301A86C6710020A6AB /* ViewTeacherViewController.swift */; };
 		EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1331A86CC7A0020A6AB /* Teacher.swift */; };
-		EE7EB1361A86CC7B0020A6AB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1351A86CC7A0020A6AB /* Class.swift */; };
 		EE7EB1381A86CC7B0020A6AB /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1371A86CC7B0020A6AB /* Assignment.swift */; };
 		EE7EB13D1A86DDDE0020A6AB /* AssignmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */; };
 		EEA07B241A86EDC5004A962A /* Classes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B231A86EDC5004A962A /* Classes.storyboard */; };
 		EEA07B261A86EDCD004A962A /* Grades.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B251A86EDCD004A962A /* Grades.storyboard */; };
 		EEA07B281A86EDD3004A962A /* Teachers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B271A86EDD3004A962A /* Teachers.storyboard */; };
+		EEE06DBF1A95811B00C82736 /* THSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE06DBE1A95811B00C82736 /* THSegmentedControl.m */; };
 		EEE426321A87F24000F84105 /* HomeworkColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE426311A87F24000F84105 /* HomeworkColor+UIColor.swift */; };
 		EEE426341A87FAC000F84105 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE426331A87FAC000F84105 /* Menu.swift */; };
 		EEE4263D1A8883ED00F84105 /* icon-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = EEE4263B1A8883ED00F84105 /* icon-plus.png */; };
@@ -56,9 +59,10 @@
 		0165788B3F2EA710B4848CCF /* Pods-Homework Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		3EF9D5D40E6E80B035A9DDDD /* Pods-Homework Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.release.xcconfig"; sourceTree = "<group>"; };
 		6875807E98C222256022F1C0 /* libPods-Homework Helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Homework Helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE0547611A87387E00F690CD /* Homework_Helper-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homework_Helper-Header.h"; sourceTree = "<group>"; };
 		EE1440411A872B4400F0D223 /* PathMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathMenu.swift; sourceTree = "<group>"; };
 		EE1440421A872B4400F0D223 /* PathMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathMenuItem.swift; sourceTree = "<group>"; };
+		EE45F9161A8FCA79005E00BF /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		EE45F9181A900018005E00BF /* HomeworkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeworkCell.swift; sourceTree = "<group>"; };
 		EE59D37A1A86B82000768511 /* Homework Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59D37E1A86B82000768511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE59D37F1A86B82000768511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		EE59D3921A86B82000768511 /* Homework HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Homework HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59D3971A86B82000768511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE59D3981A86B82000768511 /* Homework_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_HelperTests.swift; sourceTree = "<group>"; };
+		EE71555A1A8EC5EB0060D776 /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		EE7EB1191A86C4B90020A6AB /* ClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesViewController.swift; sourceTree = "<group>"; };
 		EE7EB11B1A86C4CE0020A6AB /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		EE7EB11D1A86C4FE0020A6AB /* TeachersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeachersViewController.swift; sourceTree = "<group>"; };
@@ -81,12 +86,14 @@
 		EE7EB12E1A86C65D0020A6AB /* AddTeacherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTeacherViewController.swift; sourceTree = "<group>"; };
 		EE7EB1301A86C6710020A6AB /* ViewTeacherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTeacherViewController.swift; sourceTree = "<group>"; };
 		EE7EB1331A86CC7A0020A6AB /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
-		EE7EB1351A86CC7A0020A6AB /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		EE7EB1371A86CC7B0020A6AB /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentsTableViewController.swift; sourceTree = "<group>"; };
 		EEA07B231A86EDC5004A962A /* Classes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Classes.storyboard; sourceTree = "<group>"; };
 		EEA07B251A86EDCD004A962A /* Grades.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Grades.storyboard; sourceTree = "<group>"; };
 		EEA07B271A86EDD3004A962A /* Teachers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Teachers.storyboard; sourceTree = "<group>"; };
+		EEE06DBC1A95811A00C82736 /* Homework Helper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homework Helper-Bridging-Header.h"; sourceTree = "<group>"; };
+		EEE06DBD1A95811B00C82736 /* THSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSegmentedControl.h; sourceTree = "<group>"; };
+		EEE06DBE1A95811B00C82736 /* THSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSegmentedControl.m; sourceTree = "<group>"; };
 		EEE426311A87F24000F84105 /* HomeworkColor+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeworkColor+UIColor.swift"; sourceTree = "<group>"; };
 		EEE426331A87FAC000F84105 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		EEE4263B1A8883ED00F84105 /* icon-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus.png"; sourceTree = "<group>"; };
@@ -164,8 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				EE59D37F1A86B82000768511 /* AppDelegate.swift */,
-				EEE426311A87F24000F84105 /* HomeworkColor+UIColor.swift */,
-				EEE426331A87FAC000F84105 /* Menu.swift */,
 				EE7EB1231A86C5B30020A6AB /* Assignments */,
 				EE7EB12D1A86C6460020A6AB /* Grades */,
 				EE7EB1281A86C5F10020A6AB /* Classes */,
@@ -183,11 +188,17 @@
 		EE59D37D1A86B82000768511 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EEE426311A87F24000F84105 /* HomeworkColor+UIColor.swift */,
+				EEE426331A87FAC000F84105 /* Menu.swift */,
+				EE45F9181A900018005E00BF /* HomeworkCell.swift */,
+				EE45F9161A8FCA79005E00BF /* CoreDataStack.swift */,
 				EEE426721A88951E00F84105 /* LBHamburgerButton.swift */,
 				EEE426731A88951E00F84105 /* LBViewController.swift */,
+				EEE06DBD1A95811B00C82736 /* THSegmentedControl.h */,
+				EEE06DBE1A95811B00C82736 /* THSegmentedControl.m */,
 				EE1440401A872B4400F0D223 /* PathMenu */,
 				EE59D37E1A86B82000768511 /* Info.plist */,
-				EE0547611A87387E00F690CD /* Homework_Helper-Header.h */,
+				EEE06DBC1A95811A00C82736 /* Homework Helper-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,8 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				EE59D3811A86B82000768511 /* Homework_Helper.xcdatamodeld */,
+				EE71555A1A8EC5EB0060D776 /* Class.swift */,
 				EE7EB1371A86CC7B0020A6AB /* Assignment.swift */,
-				EE7EB1351A86CC7A0020A6AB /* Class.swift */,
 				EE7EB1331A86CC7A0020A6AB /* Teacher.swift */,
 			);
 			name = "Core Data";
@@ -413,17 +424,20 @@
 				EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */,
 				EE1440431A872B4400F0D223 /* PathMenu.swift in Sources */,
 				EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */,
+				EE71555B1A8EC5EB0060D776 /* Class.swift in Sources */,
 				EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */,
 				EEE426341A87FAC000F84105 /* Menu.swift in Sources */,
 				EE7EB12F1A86C65D0020A6AB /* AddTeacherViewController.swift in Sources */,
 				EE7EB11A1A86C4B90020A6AB /* ClassesViewController.swift in Sources */,
 				EE7EB13D1A86DDDE0020A6AB /* AssignmentsTableViewController.swift in Sources */,
 				EE7EB1311A86C6710020A6AB /* ViewTeacherViewController.swift in Sources */,
+				EE45F9191A900018005E00BF /* HomeworkCell.swift in Sources */,
 				EE7EB1271A86C5EA0020A6AB /* ViewClassViewController.swift in Sources */,
 				EEE426751A88951E00F84105 /* LBViewController.swift in Sources */,
 				EEE426741A88951E00F84105 /* LBHamburgerButton.swift in Sources */,
 				EE7EB11C1A86C4CE0020A6AB /* GradesViewController.swift in Sources */,
-				EE7EB1361A86CC7B0020A6AB /* Class.swift in Sources */,
+				EEE06DBF1A95811B00C82736 /* THSegmentedControl.m in Sources */,
+				EE45F9171A8FCA79005E00BF /* CoreDataStack.swift in Sources */,
 				EE7EB12C1A86C6330020A6AB /* ViewGradeViewController.swift in Sources */,
 				EEE426321A87F24000F84105 /* HomeworkColor+UIColor.swift in Sources */,
 				EE7EB1201A86C5690020A6AB /* AddAssignmentViewController.swift in Sources */,
@@ -551,12 +565,14 @@
 			baseConfigurationReference = 0165788B3F2EA710B4848CCF /* Pods-Homework Helper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Homework Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper/Homework_Helper-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper/Homework Helper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -566,12 +582,13 @@
 			baseConfigurationReference = 3EF9D5D40E6E80B035A9DDDD /* Pods-Homework Helper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Homework Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper/Homework_Helper-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Homework Helper/Homework Helper-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

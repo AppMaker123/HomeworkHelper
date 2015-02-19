@@ -21,14 +21,34 @@ extension UIColor {
     class func hhBlueColor() -> UIColor {
         return UIColor(red: 3.0/255.0, green: 155.0/255.0, blue: 229.0/255.0, alpha: 1.0)
     }
-    class func hhYelloColor() -> UIColor {
+    class func hhYellowColor() -> UIColor {
         return UIColor(red: 249.0/255.0, green: 168.0/255.0, blue: 37.0/255.0, alpha: 1.0)
     }
     class func hhPurpleColor() -> UIColor {
         return UIColor(red: 142.0/255.0, green: 68.0/255.0, blue: 173.0/255.0, alpha: 1.0)
     }
+
+    // Colors for the different views
+    class func hhAssignmentColor() -> UIColor {
+        return UIColor(red: 3.0/255.0, green: 155.0/255.0, blue: 229.0/255.0, alpha: 1.0)
+    }
+    class func hhGradeColor() -> UIColor {
+        return UIColor(red: 249.0/255.0, green: 168.0/255.0, blue: 37.0/255.0, alpha: 1.0)
+    }
+    class func hhClassColor() -> UIColor {
+        return UIColor(red: 76.0/255.0, green: 175.0/255.0, blue: 80.0/255.0, alpha: 1.0)
+    }
+    class func hhTeacherColor() -> UIColor {
+        return UIColor(red: 142.0/255.0, green: 68.0/255.0, blue: 173.0/255.0, alpha: 1.0)
+    }
+    
+    // Other Colors
+    class func hhNavBarColor() -> UIColor {
+        return UIColor(red: 12.0/255.0, green: 12.0/255.0, blue: 40.0/255.0, alpha: 1.0)
+    }
     class func hhBackgroundWhite() -> UIColor {
         return UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1.0)
     }
+
 }
 
