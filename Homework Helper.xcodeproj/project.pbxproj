@@ -422,7 +422,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "GIT_RELEASE_VERSION=$(git describe --tags --always --dirty)\nCOMMITS=$(git rev-list HEAD | wc -l)\nCOMMITS=$(($COMMITS))\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleShortVersionString\" \"${GIT_RELEASE_VERSION#*v}\"\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleVersion\" \"${COMMITS}\"";
+			shellScript = "echo \"Updating Build\"\n\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nversion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$INFOPLIST_FILE\")\n\necho \"Current Version: $version\"\necho \"Latest Build: $buildNumber\"\n\nmajor=$(echo $version | cut -d'.' -f 1)\nminor=$(echo $version | cut -d'.' -f 2)\nrevision=$(echo $version | cut -d'.' -f 3)\nbuild=$(echo $buildNumber | cut -d'.' -f 4)\ngit=$(echo $buildNumber | cut -d'.' -f 5)\n\necho \"Major: $major\"\necho \"Minor: $minor\"\necho \"Revision: $revision\"\necho \"build: $build\"\necho \"git: $git\"\n\nbuild=$(($build + 1))\ngit=`git rev-parse --short HEAD`\n\necho \"This build: $build\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $major.$minor.$revision.$build.$git\" \"$INFOPLIST_FILE\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
