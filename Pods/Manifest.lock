@@ -1,0 +1,20 @@
+PODS:
+  - CocoaLumberjack (2.0.0-rc):
+    - CocoaLumberjack/Default (= 2.0.0-rc)
+    - CocoaLumberjack/Extensions (= 2.0.0-rc)
+  - CocoaLumberjack/Core (2.0.0-rc)
+  - CocoaLumberjack/Default (2.0.0-rc):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0-rc):
+    - CocoaLumberjack/Default
+  - JVFloatLabeledTextField (1.0.2)
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 2.0.0-rc)
+  - JVFloatLabeledTextField
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 6186e27827fc574b50b16c10102fcc591437f06c
+  JVFloatLabeledTextField: c1ad6b4b5bd77115cfe6c71ba4c023866df5c4cf
+
+COCOAPODS: 0.36.0.beta.2
