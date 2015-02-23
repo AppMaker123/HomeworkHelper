@@ -4,6 +4,7 @@
 target 'Homework Helper' do
     pod 'CocoaLumberjack', '~> 2.0.0-rc'
     pod 'JVFloatLabeledTextField'
+
 end
 
 target 'Homework HelperTests' do

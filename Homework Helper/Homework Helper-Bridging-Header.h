@@ -5,3 +5,4 @@
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import "THSegmentedControl.h"
 #import <JVFloatLabeledTextField.h>
+#import "MultiSelectSegmentedControl.h"

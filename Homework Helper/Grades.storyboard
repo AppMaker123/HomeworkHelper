@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ODG-3X-Mde">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ODG-3X-Mde">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -36,6 +36,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ODG-3X-Mde" firstAttribute="leading" secondItem="rE9-9B-zB7" secondAttribute="leading" id="3H6-BS-p88"/>
+                            <constraint firstItem="ODG-3X-Mde" firstAttribute="top" secondItem="rE9-9B-zB7" secondAttribute="top" id="Uau-R8-smY"/>
+                            <constraint firstItem="ODG-3X-Mde" firstAttribute="bottom" secondItem="CYR-zp-cng" secondAttribute="top" id="msi-iA-2n5"/>
+                            <constraint firstAttribute="trailing" secondItem="ODG-3X-Mde" secondAttribute="trailing" id="ndT-Dw-SgQ"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Grades" id="hVH-7H-6v6">

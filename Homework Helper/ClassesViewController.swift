@@ -12,7 +12,7 @@ import CoreData
 class ClassesViewController:UIViewController, UITableViewDelegate, PathMenuDelegate, MenuDelegate {
     
     let menu = Menu()
-    
+
     var fetchedResultsController: NSFetchedResultsController!
     
     override func viewDidLoad() {

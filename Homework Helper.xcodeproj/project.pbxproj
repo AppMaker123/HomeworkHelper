@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8514A1FBCF4156DDCFB77292 /* libPods-Homework Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6875807E98C222256022F1C0 /* libPods-Homework Helper.a */; };
+		E3C65643088BD08C588397D9 /* libPods-Homework Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFA8BC6651AEA576C35BA4E /* libPods-Homework Helper.a */; };
 		EE1440431A872B4400F0D223 /* PathMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1440411A872B4400F0D223 /* PathMenu.swift */; };
 		EE1440441A872B4400F0D223 /* PathMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1440421A872B4400F0D223 /* PathMenuItem.swift */; };
+		EE3D762C1A9AA38400374282 /* calendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EE3D762B1A9AA38400374282 /* calendar.pdf */; };
+		EE3E55E91A9A7B9E005106CF /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E55E01A9A7B9E005106CF /* HoshiTextField.swift */; };
+		EE3E55EA1A9A7B9E005106CF /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E55E11A9A7B9E005106CF /* IsaoTextField.swift */; };
+		EE3E55EB1A9A7B9E005106CF /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E55E21A9A7B9E005106CF /* JiroTextField.swift */; };
+		EE3E55EC1A9A7B9E005106CF /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E55E31A9A7B9E005106CF /* KaedeTextField.swift */; };
+		EE3E55ED1A9A7B9E005106CF /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E55E41A9A7B9E005106CF /* MadokaTextField.swift */; };
+		EE3E55EE1A9A7B9E005106CF /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E55E51A9A7B9E005106CF /* MinoruTextField.swift */; };
+		EE3E55EF1A9A7B9E005106CF /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E55E71A9A7B9E005106CF /* TextFieldsEffects.swift */; };
+		EE3E55F01A9A7B9E005106CF /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E55E81A9A7B9E005106CF /* YokoTextField.swift */; };
 		EE45F9171A8FCA79005E00BF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45F9161A8FCA79005E00BF /* CoreDataStack.swift */; };
 		EE45F9191A900018005E00BF /* HomeworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45F9181A900018005E00BF /* HomeworkCell.swift */; };
 		EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59D37F1A86B82000768511 /* AppDelegate.swift */; };
@@ -33,6 +42,7 @@
 		EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1331A86CC7A0020A6AB /* Teacher.swift */; };
 		EE7EB1381A86CC7B0020A6AB /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB1371A86CC7B0020A6AB /* Assignment.swift */; };
 		EE7EB13D1A86DDDE0020A6AB /* AssignmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */; };
+		EE8012FA1A9AC47A00802C9B /* MultiSelectSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8012F91A9AC47A00802C9B /* MultiSelectSegmentedControl.m */; };
 		EEA07B241A86EDC5004A962A /* Classes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B231A86EDC5004A962A /* Classes.storyboard */; };
 		EEA07B261A86EDCD004A962A /* Grades.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B251A86EDCD004A962A /* Grades.storyboard */; };
 		EEA07B281A86EDD3004A962A /* Teachers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA07B271A86EDD3004A962A /* Teachers.storyboard */; };
@@ -58,9 +68,19 @@
 /* Begin PBXFileReference section */
 		0165788B3F2EA710B4848CCF /* Pods-Homework Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		3EF9D5D40E6E80B035A9DDDD /* Pods-Homework Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.release.xcconfig"; sourceTree = "<group>"; };
-		6875807E98C222256022F1C0 /* libPods-Homework Helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Homework Helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFA8BC6651AEA576C35BA4E /* libPods-Homework Helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Homework Helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1440411A872B4400F0D223 /* PathMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathMenu.swift; sourceTree = "<group>"; };
 		EE1440421A872B4400F0D223 /* PathMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathMenuItem.swift; sourceTree = "<group>"; };
+		EE3D762B1A9AA38400374282 /* calendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = calendar.pdf; sourceTree = "<group>"; };
+		EE3E55E01A9A7B9E005106CF /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = "../../../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects/HoshiTextField.swift"; sourceTree = "<group>"; };
+		EE3E55E11A9A7B9E005106CF /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = "../../../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects/IsaoTextField.swift"; sourceTree = "<group>"; };
+		EE3E55E21A9A7B9E005106CF /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = "../../../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects/JiroTextField.swift"; sourceTree = "<group>"; };
+		EE3E55E31A9A7B9E005106CF /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = "../../../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects/KaedeTextField.swift"; sourceTree = "<group>"; };
+		EE3E55E41A9A7B9E005106CF /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = "../../../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects/MadokaTextField.swift"; sourceTree = "<group>"; };
+		EE3E55E51A9A7B9E005106CF /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = "../../../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects/MinoruTextField.swift"; sourceTree = "<group>"; };
+		EE3E55E61A9A7B9E005106CF /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextFieldEffects.h; path = "../../../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects/TextFieldEffects.h"; sourceTree = "<group>"; };
+		EE3E55E71A9A7B9E005106CF /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = "../../../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift"; sourceTree = "<group>"; };
+		EE3E55E81A9A7B9E005106CF /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = "../../../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects/YokoTextField.swift"; sourceTree = "<group>"; };
 		EE45F9161A8FCA79005E00BF /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		EE45F9181A900018005E00BF /* HomeworkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeworkCell.swift; sourceTree = "<group>"; };
 		EE59D37A1A86B82000768511 /* Homework Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +108,8 @@
 		EE7EB1331A86CC7A0020A6AB /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		EE7EB1371A86CC7B0020A6AB /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		EE7EB13C1A86DDDE0020A6AB /* AssignmentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentsTableViewController.swift; sourceTree = "<group>"; };
+		EE8012F81A9AC47A00802C9B /* MultiSelectSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSelectSegmentedControl.h; sourceTree = "<group>"; };
+		EE8012F91A9AC47A00802C9B /* MultiSelectSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSelectSegmentedControl.m; sourceTree = "<group>"; };
 		EEA07B231A86EDC5004A962A /* Classes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Classes.storyboard; sourceTree = "<group>"; };
 		EEA07B251A86EDCD004A962A /* Grades.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Grades.storyboard; sourceTree = "<group>"; };
 		EEA07B271A86EDD3004A962A /* Teachers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Teachers.storyboard; sourceTree = "<group>"; };
@@ -107,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8514A1FBCF4156DDCFB77292 /* libPods-Homework Helper.a in Frameworks */,
+				E3C65643088BD08C588397D9 /* libPods-Homework Helper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +146,7 @@
 		0CDD889F408B0B0BCB747F46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6875807E98C222256022F1C0 /* libPods-Homework Helper.a */,
+				DDFA8BC6651AEA576C35BA4E /* libPods-Homework Helper.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,6 +199,7 @@
 				EE7EB1321A86C67E0020A6AB /* Teachers */,
 				EE59D3891A86B82000768511 /* Images.xcassets */,
 				EEE4263B1A8883ED00F84105 /* icon-plus.png */,
+				EE3D762B1A9AA38400374282 /* calendar.pdf */,
 				EEE4263C1A8883ED00F84105 /* icon-plus@2x.png */,
 				EE59D38B1A86B82000768511 /* LaunchScreen.xib */,
 				EE7EB1391A86CC860020A6AB /* Core Data */,
@@ -188,6 +211,8 @@
 		EE59D37D1A86B82000768511 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE8012F81A9AC47A00802C9B /* MultiSelectSegmentedControl.h */,
+				EE8012F91A9AC47A00802C9B /* MultiSelectSegmentedControl.m */,
 				EEE426311A87F24000F84105 /* HomeworkColor+UIColor.swift */,
 				EEE426331A87FAC000F84105 /* Menu.swift */,
 				EE45F9181A900018005E00BF /* HomeworkCell.swift */,
@@ -196,6 +221,15 @@
 				EEE426731A88951E00F84105 /* LBViewController.swift */,
 				EEE06DBD1A95811B00C82736 /* THSegmentedControl.h */,
 				EEE06DBE1A95811B00C82736 /* THSegmentedControl.m */,
+				EE3E55E01A9A7B9E005106CF /* HoshiTextField.swift */,
+				EE3E55E11A9A7B9E005106CF /* IsaoTextField.swift */,
+				EE3E55E21A9A7B9E005106CF /* JiroTextField.swift */,
+				EE3E55E31A9A7B9E005106CF /* KaedeTextField.swift */,
+				EE3E55E41A9A7B9E005106CF /* MadokaTextField.swift */,
+				EE3E55E51A9A7B9E005106CF /* MinoruTextField.swift */,
+				EE3E55E61A9A7B9E005106CF /* TextFieldEffects.h */,
+				EE3E55E71A9A7B9E005106CF /* TextFieldsEffects.swift */,
+				EE3E55E81A9A7B9E005106CF /* YokoTextField.swift */,
 				EE1440401A872B4400F0D223 /* PathMenu */,
 				EE59D37E1A86B82000768511 /* Info.plist */,
 				EEE06DBC1A95811A00C82736 /* Homework Helper-Bridging-Header.h */,
@@ -360,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE4263D1A8883ED00F84105 /* icon-plus.png in Resources */,
+				EE3D762C1A9AA38400374282 /* calendar.pdf in Resources */,
 				EE59D3881A86B82000768511 /* Main.storyboard in Resources */,
 				EE59D38D1A86B82000768511 /* LaunchScreen.xib in Resources */,
 				EEA07B241A86EDC5004A962A /* Classes.storyboard in Resources */,
@@ -432,31 +467,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE7EB1381A86CC7B0020A6AB /* Assignment.swift in Sources */,
+				EE8012FA1A9AC47A00802C9B /* MultiSelectSegmentedControl.m in Sources */,
 				EE7EB1221A86C5830020A6AB /* ViewAssignmentViewController.swift in Sources */,
 				EE1440441A872B4400F0D223 /* PathMenuItem.swift in Sources */,
 				EE7EB12A1A86C6240020A6AB /* AddGradeViewController.swift in Sources */,
 				EE7EB1251A86C5C50020A6AB /* AddClassViewController.swift in Sources */,
 				EE59D3801A86B82000768511 /* AppDelegate.swift in Sources */,
+				EE3E55EC1A9A7B9E005106CF /* KaedeTextField.swift in Sources */,
 				EE1440431A872B4400F0D223 /* PathMenu.swift in Sources */,
 				EE59D3831A86B82000768511 /* Homework_Helper.xcdatamodeld in Sources */,
 				EE71555B1A8EC5EB0060D776 /* Class.swift in Sources */,
+				EE3E55E91A9A7B9E005106CF /* HoshiTextField.swift in Sources */,
 				EE7EB1341A86CC7A0020A6AB /* Teacher.swift in Sources */,
+				EE3E55EA1A9A7B9E005106CF /* IsaoTextField.swift in Sources */,
 				EEE426341A87FAC000F84105 /* Menu.swift in Sources */,
 				EE7EB12F1A86C65D0020A6AB /* AddTeacherViewController.swift in Sources */,
 				EE7EB11A1A86C4B90020A6AB /* ClassesViewController.swift in Sources */,
+				EE3E55EF1A9A7B9E005106CF /* TextFieldsEffects.swift in Sources */,
 				EE7EB13D1A86DDDE0020A6AB /* AssignmentsTableViewController.swift in Sources */,
 				EE7EB1311A86C6710020A6AB /* ViewTeacherViewController.swift in Sources */,
 				EE45F9191A900018005E00BF /* HomeworkCell.swift in Sources */,
+				EE3E55EE1A9A7B9E005106CF /* MinoruTextField.swift in Sources */,
 				EE7EB1271A86C5EA0020A6AB /* ViewClassViewController.swift in Sources */,
 				EEE426751A88951E00F84105 /* LBViewController.swift in Sources */,
 				EEE426741A88951E00F84105 /* LBHamburgerButton.swift in Sources */,
 				EE7EB11C1A86C4CE0020A6AB /* GradesViewController.swift in Sources */,
 				EEE06DBF1A95811B00C82736 /* THSegmentedControl.m in Sources */,
 				EE45F9171A8FCA79005E00BF /* CoreDataStack.swift in Sources */,
+				EE3E55EB1A9A7B9E005106CF /* JiroTextField.swift in Sources */,
 				EE7EB12C1A86C6330020A6AB /* ViewGradeViewController.swift in Sources */,
 				EEE426321A87F24000F84105 /* HomeworkColor+UIColor.swift in Sources */,
 				EE7EB1201A86C5690020A6AB /* AddAssignmentViewController.swift in Sources */,
+				EE3E55F01A9A7B9E005106CF /* YokoTextField.swift in Sources */,
 				EE7EB11E1A86C4FE0020A6AB /* TeachersViewController.swift in Sources */,
+				EE3E55ED1A9A7B9E005106CF /* MadokaTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

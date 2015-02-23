@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2eg-4g-cwg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2eg-4g-cwg">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.011764705882352941" green="0.60784313725490191" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,6 +56,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2eg-4g-cwg" firstAttribute="leading" secondItem="Qcc-JJ-zaS" secondAttribute="leading" id="EGp-GE-P71"/>
+                            <constraint firstItem="2eg-4g-cwg" firstAttribute="top" secondItem="Qcc-JJ-zaS" secondAttribute="top" id="EhX-tn-lSf"/>
+                            <constraint firstItem="2eg-4g-cwg" firstAttribute="bottom" secondItem="gCD-F8-cDs" secondAttribute="top" id="YFk-qb-12Q"/>
+                            <constraint firstAttribute="trailing" secondItem="2eg-4g-cwg" secondAttribute="trailing" id="pD2-nA-Jya"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Assignments" id="9Qu-n2-3cW">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="nIi-Db-7Gq">
